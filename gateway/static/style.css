@@ -1,0 +1,36 @@
+body {
+    font-family: "Comic Sans MS", "Brush Script MT", "Lucida Handwriting", cursive;
+    background: #111;
+    color: #eee;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: #3cf;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 1rem 0;
+}
+
+a {
+    display: block;
+    padding: 1rem;
+    background: #222;
+    color: #3cf;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+
+a:hover {
+    background: #333;
+}

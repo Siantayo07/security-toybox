@@ -1,0 +1,165 @@
+body {
+    font-family: "Comic Sans MS", "Brush Script MT", "Lucida Handwriting", cursive;
+    background: #111;
+    color: #eee;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: #3cf;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.generator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #eee;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #222;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3cf;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #3cf;
+}
+
+#lengthDisplay {
+    font-weight: bold;
+    color: #3cf;
+    font-size: 1.2rem;
+}
+
+.generate-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #222;
+    color: #3cf;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: inherit;
+}
+
+.generate-btn:hover {
+    background: #333;
+}
+
+.result {
+    background: #222;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #111;
+    border-radius: 0.5rem;
+}
+
+#password {
+    flex: 1;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: #3cf;
+    word-break: break-all;
+}
+
+.copy-btn {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #333;
+    color: #3cf;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: inherit;
+}
+
+.copy-btn:hover {
+    background: #444;
+}
+
+.strength-meter {
+    margin-top: 1.5rem;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background: #111;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease, background 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+#strengthText {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    color: #3cf;
+    text-decoration: none;
+    padding: 1rem;
+    background: #222;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    margin-top: 2rem;
+}
+
+.back-btn:hover {
+    background: #333;
+}
