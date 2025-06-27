@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Gotcha</title>
+    <link rel="preload" href="{{ url_for('static', filename='style.css') }}" as="style">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    {% if geo %}
+        <h2>👋 Hello from {{ geo.get("city", "somewhere") }}, {{ geo.get("country", "Earth") }}!</h2>
+    {% else %}
+        <h2>👋 Hello, visitor!</h2>
+    {% endif %}
+
+    <h1>🌐 Your IP Info</h1>
+    
+    <div class="info-section">
+        <p><strong>IP Address:</strong> {{ ip }}</p>
+        <p><strong>User Agent:</strong> {{ ua }}</p>
+    </div>
+
+    {% if geo %}
+        <div class="geo-section">
+            <h2>📍 Geolocation Info</h2>
+            <p><strong>City:</strong> {{ geo.get("city", "Unknown") }}</p>
+            <p><strong>Region:</strong> {{ geo.get("region", "Unknown") }}</p>
+            <p><strong>Country:</strong> {{ geo.get("country", "Unknown") }}</p>
+            <p><strong>ISP/Organization:</strong> {{ geo.get("org", "Unknown") }}</p>
+            <p><strong>Coordinates:</strong> {{ geo.get("loc", "Unknown") }}</p>
+        </div>
+    {% endif %}
+
+    <div class="actions">
+        <!-- <a href="/logs" class="logs-btn">📋 View Visitor Logs</a> -->
+        <a href="http://localhost:5000" class="back-btn">⬅ Back to Toybox</a>
+    </div>
+</body>
+</html>

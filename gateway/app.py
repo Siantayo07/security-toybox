@@ -7,7 +7,7 @@ def index():
     tools = [
         {"name": "Password Generator", "url": "http://localhost:5007"},
         {"name": "Evil URL Shortener", "url": "http://localhost:5001"},
-        {"name": "Password Strength Meter", "url": "http://localhost:5002"},
+        {"name": "IP Catcher Tool", "url": "http://localhost:5002"},
         {"name": "Hacker Clicker Game", "url": "http://localhost:5003"},
         {"name": "Security Buzzword Bingo", "url": "http://localhost:5004"},
         {"name": "Fake Breach Visualizer", "url": "http://localhost:5005"},

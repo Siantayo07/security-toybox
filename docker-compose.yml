@@ -10,3 +10,8 @@ services:
     build: ./tools/password-generator
     ports:
       - "5007:5007"
+
+  ip_catcher:
+    build: ./tools/ip-catcher
+    ports:
+      - "5002:5002"
